@@ -2,61 +2,62 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/id_edit_layout"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="80dp"
     android:baselineAligned="false">
 
     <!-- Layout Edit -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="18dp"
         android:layout_weight=".3"
-        android:orientation="horizontal">
+        android:background="@drawable/edit_borders"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
 
-        <!-- Espaço antes Edit -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1.2"
-            android:background="@android:color/white"
-            android:orientation="horizontal"></LinearLayout>
+            android:layout_weight=".3"
+            android:orientation="horizontal">
 
-        <!-- Edit -->
-        <EditText
-            android:id="@+id/editText"
+            <!-- Espaço antes Edit -->
+
+            <!-- Edit -->
+
+            <EditText
+                android:id="@+id/id_main_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:width="1dp"
+                android:backgroundTint="@android:color/transparent"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="textPersonName" />
+            <!--android:backgroundTint="@android:color/holo_purple"-->
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight=".1"
-            android:width="1dp"
-            android:background="@android:color/white"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Botão -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView" />
+        </LinearLayout>
 
     </LinearLayout>
 
     <!-- Layout botão - Depois Edit -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <!-- Botão -->
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center"
-            android:text="TextView" />
-    </LinearLayout>
 
 </LinearLayout>

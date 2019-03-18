@@ -31,7 +31,7 @@
             <!-- Rodapé cabeçalho -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:background="#1b96d9"
                 android:orientation="vertical"/>
 
@@ -48,7 +48,7 @@
         <!-- Layout secundário - EditText e Button -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:layout_marginTop="?attr/actionBarSize"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal">
